@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizNex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=geist@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header_styles.css">
+    <link rel="stylesheet" href="css/auth_styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="BizNex Logo">
+        </a>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="auth.html" class="start-button">Login / Register</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Menu -->
+    <nav class="nav" id="nav">
+        <div class="close-button">&times;</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="auth.html" class="start-button">Login / Register</a></li>
+        </ul>
+    </nav>
+
+  <!-- Authentication Container -->
+  <section class="auth-container">
+    <div class="auth-box">
+      <!-- Tab Header -->
+      <div class="tab-header">
+        <button id="loginTab" class="active">Login</button>
+        <button id="registerTab">Register</button>
+      </div>
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- Login Form -->
+        <form id="loginForm" class="form active">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="auth-btn">Login</button>
+        </form>
+        <!-- Register Form -->
+        <form id="registerForm" class="form">
+          <!-- First and Last Name in one row -->
+          <div class="name-row">
+            <input type="text" placeholder="First Name" class="half-input" required />
+            <input type="text" placeholder="Last Name" class="half-input" required />
+          </div>
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+          <button type="submit" class="auth-btn">Register</button>
+        </form>
+      </div>
+      <!-- Separator -->
+      <div class="separator"><span>or</span></div>
+      <!-- Google Login Button in Single Line -->
+      <button class="google-btn">
+        <img src="img/google.svg" alt="Google Logo" /> 
+        <span>Login with Google</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/header_script.js"></script>
+  <!-- Auth Tab Switching Script -->
+  <script src="js/auth_script.js"></script>
+</body>
+</html>
