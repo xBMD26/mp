@@ -289,9 +289,20 @@ a.logo {
   }
   .section {
     padding: 20px 10px; /* Reduce padding */
-}
+  }
+  
 
-      
+  .section:first-child {
+    padding-top: 2px;
+    padding-bottom: 2px; /* Adjust as needed */
+  }
+
+  /* Reduce top padding for the second section */
+  .section:last-child {
+    padding-top: 2px; /* Adjust as needed */
+  }
+
+
   h2 {
   font-size: 32px;
   }
