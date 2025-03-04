@@ -292,7 +292,7 @@ a.logo {
 }
 
  .section:last-child {
-        padding-bottom: 20px; /* Adds space at the bottom of the last section */
+        padding-bottom: 50px; /* Adds space at the bottom of the last section */
     }
       
   h2 {
