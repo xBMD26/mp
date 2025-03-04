@@ -52,6 +52,10 @@ a.logo {
   align-items: center;
 }
 
+#login-text {
+  color:white;
+}
+
 /* Hamburger Menu Styling */
 .hamburger {
   display: none;
