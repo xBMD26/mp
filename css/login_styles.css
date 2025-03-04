@@ -291,9 +291,6 @@ a.logo {
     padding: 20px 10px; /* Reduce padding */
 }
 
- .section:last-child {
-        padding-bottom: 50px; /* Adds space at the bottom of the last section */
-    }
       
   h2 {
   font-size: 32px;
